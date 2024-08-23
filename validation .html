@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            php form validation
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="validation.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>registration</h1>
+            <form action="process_form.php"method="post">
+                <br>
+                <label for="name">name:</label>
+                <input type="text"id="name"name="name"required>
+                
+                <span class="error"><?php echo $nameErr;?></span>
+<br><br>
+
+
+                <label for="name">EMAIL:</label>
+                <br>
+                <input type="email"id="email"name="email"required>
+                <span class="error"><?php echo $email;?></span>
+
+<br>
+<br>
+
+                <label for="name">PASSWORD:</label>
+                <br>
+                <input type="password"id="password"name="password"required>
+                <span class="error"><?php echo $password;?></span>
+
+
+
+<br><br>
+
+                <input type="submit"value="registration">
+            </form>
+        </div>
+    </body>
+</html>
